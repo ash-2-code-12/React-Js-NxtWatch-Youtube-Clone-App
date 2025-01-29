@@ -1,24 +1,4 @@
-In this project, let's build **Nxt Watch** by applying the concepts we have learned till now.
-
-### Refer to the videos below:
-
-**Success View** <br/>
-
-<div style="text-align: center;">
-     <video style="max-width:80%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
-    <source src="https://assets.ccbp.in/frontend/content/react-js/nxt-watch-output-v0.mp4" type="video/mp4">
-  </video>
-</div>
-<br/>
-
-**Failure View** <br/>
-
-<div style="text-align: center;">
-    <video style="max-width:80%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
-    <source src="https://assets.ccbp.in/frontend/content/react-js/nxt-watch-failure-output-v0.mp4" type="video/mp4">
-  </video>
-</div>
-<br/>
+[Visit NxtWatch Site](https://nxtwatch007ash.ccbp.tech) 
 
 ### Design Files
 
@@ -123,24 +103,8 @@ In this project, let's build **Nxt Watch** by applying the concepts we have lear
 
 </details>
 
-### Set Up Instructions
 
-<details>
-<summary>Click to view</summary>
-
-- Download dependencies by running `npm install`
-- Start up the app using `npm start`
-</details>
-
-### Completion Instructions
-
-<details>
-<summary>Functionality to be added</summary>
-<br/>
-
-The app must have the following functionalities
-
-- Initially, the app should be in **Light** theme
+### Functionalities
 
 - **Login Route**
 
@@ -412,123 +376,6 @@ Returns a response containing the details of a specific video
 
 </details>
 
-### Quick Tips
-
-<details>
-<summary>Click to view</summary>
-<br>
-
-- To build this project, take a look at the <a href='https://learning.ccbp.in/frontend-development/course?c_id=2f4192f7-7495-49ca-a6ce-6b74005e25f1&s_id=b01fca1c-aa5c-4d79-b81e-0220e7649bd0&t_id=416f0cab-8425-413b-9157-c7b4d4ae4467' target="_blank">React Popup</a> and <a href='https://learning.ccbp.in/frontend-development/course?c_id=2f4192f7-7495-49ca-a6ce-6b74005e25f1&s_id=b6392b63-25f6-4215-be09-9f23ad91d789&t_id=416f0cab-8425-413b-9157-c7b4d4ae4467' target="_blank">React Video Player</a> reading materials
-
-- To style popup content use `.popup-content` class
-
-```jsx
-<Popup
-  modal
-  trigger={
-    //write code here
-  }
-  className="popup-content"
->
-  //write code here
-</Popup>
-```
-
-- Use `formatDistanceToNow` function to find the difference between the given date and now in words
-
-```jsx
-import {formatDistanceToNow} from 'date-fns'
-console.log(formatDistanceToNow(new Date(2021, 8, 20)))
-// Return the distance between the given date and now in words.
-```
-
-</details>
-
-### Important Note
-
-<details>
-<summary>Click to view</summary>
-
-<br/>
-
-**The following instructions are required for the tests to pass**
-
-- Render `Home` Route component when the path in URL matches `/`
-- Render `Login` Route component when the path in URL matches `/login`
-- Render `Trending` Route component when the path in URL matches `/trending`
-- Render `Gaming` Route component when the path in URL matches `/gaming`
-- Render `Saved Videos` Route component when the path in URL matches `/saved-videos`
-- Render `Video Item Details` Route component when the path in URL matches `/videos/:id`
-- Render `Not Found` Route component when the path in URL matches `/not-found`
-- No need to use the `BrowserRouter` in `App.js` as we have already included in `index.js`
-- User credentials
-
-  ```text
-   username: rahul
-   password: rahul@2021
-
-  ```
-
-- Wrap the `Loader` component with an HTML container element and add the `data-testid` attribute value as **loader** to it
-
-  ```jsx
-  <div className="loader-container" data-testid="loader">
-    <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
-  </div>
-  ```
-
-- The HTML button element with search icon in Home Route should have the `data-testid` attribute value as **searchButton** to it
-
-- **Styled Components** should be used for styling purposes
-- The theme icon button should have the `data-testid` as **theme**
-- The video thumbnail images in the Routes should have the alt as **video thumbnail**
-- The channel logos in Home Route should have the alt as **channel logo**
-
-- **Home Route**
-
-  - The Route should consist of an HTML container element with `data-testid` as **home**
-  - The Route should consist of a banner and it contains a close button with `data-testid` as **close**
-  - The Route should consist of a banner as shown in the design files with `data-testid` as **banner**
-  - The Route should consist of an HTML image element with alt as **nxt watch logo** and src as the given Nxt Watch logo URL in the banner
-  - The HTML container element with `data-testid` as **home** should have the background color,
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background color
-    - If the Dark theme is applied, then the **#181818** color should be applied as a background color
-
-- **Trending Route**
-
-  - The Route should consist of an HTML container element with `data-testid` as **trending**
-  - The HTML container element with `data-testid` as **trending** should persist the background color,
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background color
-    - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background color
-
-- **Gaming Route**
-
-  - The Route should consist of an HTML container element with `data-testid` as **gaming**
-  - The HTML container element with `data-testid` as **gaming** should persist the background color,
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background color
-    - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background color
-
-- **Saved Videos Route**
-
-  - The Route should consist of an HTML container element with `data-testid` as **savedVideos**
-  - The HTML container element with `data-testid` as **savedVideos** should persist the background color,
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background color
-    - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background color
-
-- **Video Item Details Route**
-
-  - The **Video Item Details** Route should consist of an HTML container element with `data-testid` as **videoItemDetails**
-  - The HTML container element with `data-testid` as **videoItemDetails** should persist the background color,
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background color
-    - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background color
-
-- The **Website logos** for Light theme and Dark theme should have the alt as **website logo**
-- The **Failure** images for Light theme and Dark theme should have the alt as **failure view**
-- In the Video Item Details Route, the **#2563eb** color should be applied as `color` for any active button i.e (Like, Dislike, Save)
-- In the Video Item Details Route, the **#64748b** color should be applied as `color` for any inactive button i.e (Like, Dislike, Save)
-
-</details>
-
 ### Resources
 
 <details>
@@ -596,10 +443,3 @@ console.log(formatDistanceToNow(new Date(2021, 8, 20)))
 - Roboto
 
 </details>
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
