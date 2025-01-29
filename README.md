@@ -7,7 +7,7 @@
 </div>
 <br/>
 
-# Yotube Application
+# Yotube Application Clone - NxtTrends
 
 ## 📜 Overview
 The **Nxt Watch** is a dynamic and responsive web application built using **React JS**. It allows users to browse, search, save, and view videos
