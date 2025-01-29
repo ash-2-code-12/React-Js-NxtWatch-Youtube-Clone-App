@@ -10,22 +10,25 @@
 # Yotube Application
 
 ## 📜 Overview
-The **Nxt Trends** is a dynamic and responsive web application built using **React JS**. It allows users to browse, search, and purchase items with ease. The app features a modern UI/UX and provides seamless navigation for an optimal shopping experience.
+The **Nxt Watch** is a dynamic and responsive web application built using **React JS**. It allows users to browse, search, save, and view videos
+with ease. The app features Youtube application layout.
 
-## 🌐 Pages
-- **Login Page**
-- 🏠 **Home Page**
-- 🛍️ **Products Page**
-- 📄 **Product Details Page**
-- 🛒 **Cart Page**
+## 🌐 Pages  
+- 🔑 **Login Page**  
+- 🏠 **Home Page**  
+- 📈 **Trending Page**  
+- 🎮 **Gaming Page**  
+- 💾 **Saved Videos Page**  
+- 🎥 **Video Player Page**  
   
 ---
 
 ## 🚀 Features
 - **Product Listing**: Display a variety of products with details like name, price, and image.
-- **Search and Filter**: Easily search for products and apply filters by category or price.
-- **Add to Cart**: Add items to the cart and view the cart summary.
-- **Checkout**: Place orders with a smooth and intuitive checkout process.
+- **Search Videos**: Search and display video based on search query.
+- **Trending Videos**: Get Trending videos to view.
+- **Add to Saved Videos**: Add videos to the Saved Videos and view the Saved Videos.
+- **Play Video**: Play Video in Video Player and get suggested Videos.
 - **Responsive Design**: Works flawlessly on desktops, tablets, and mobile devices.
 
 ---
@@ -43,19 +46,26 @@ The **Nxt Trends** is a dynamic and responsive web application built using **Rea
 
 Here is the list of third-party packages used in production:
 
-1. **@testing-library/jest-dom**: Testing library for DOM assertions.
-2. **@testing-library/react**: Testing utilities for React components.
-3. **@testing-library/user-event**: Simulates user interactions for testing.
-4. **chalk**: Terminal string styling library.
-5. **history**: Manages session history (used in routers like `react-router-dom`).
-6. **js-cookie**: Simplified cookie management in JavaScript.
-7. **msw**: Mock Service Worker for testing API calls.
-8. **react**: Core React library for building user interfaces.
-9. **react-dom**: Rendering React components into the DOM.
-10. **react-icons**: Icon library for React.
-11. **react-loader-spinner**: React components for loading spinners.
-12. **react-router-dom**: Routing library for React applications.
-13. **reactjs-popup**: Popup component library for React.
+1. **@craco/craco**: Customizable Create React App configuration override.
+2. **@testing-library/jest-dom**: Testing library for DOM assertions.
+3. **@testing-library/react**: Testing utilities for React components.
+4. **@testing-library/user-event**: Simulates user interactions for testing.
+5. **chalk**: Terminal string styling library.
+6. **date-fns**: Modern JavaScript date utility library.
+7. **history**: Manages session history (used in routers like `react-router-dom`).
+8. **jest-styled-components**: Jest utilities for testing styled-components.
+9. **js-cookie**: Simplified cookie management in JavaScript.
+10. **msw**: Mock Service Worker for testing API calls.
+11. **react**: Core React library for building user interfaces.
+12. **react-dom**: Rendering React components into the DOM.
+13. **react-icons**: Icon library for React.
+14. **react-loader-spinner**: React components for loading spinners.
+15. **react-player**: React component for playing media files (videos, audio).
+16. **react-router-dom**: Routing library for React applications.
+17. **reactjs-popup**: Popup component library for React.
+18. **styled-components**: Library for styling React components using CSS-in-JS.
+19. **surge**: Static web publishing tool for deploying frontend projects.
+
 
 ### Design Files
 
@@ -507,32 +517,38 @@ Returns a response containing the details of a specific video
 ```plaintext
 /src
 |-- /components
-|   |-- /AllProductsSection
-|   |-- /Cart
-|   |-- /CartItem
-|   |-- /CartListView
-|   |-- /CartSummary
-|   |-- /EmptyCartView
-|   |-- /FiltersGroup
-|   |-- /Header
-|   |-- /Home
-|   |-- /LoginForm
-|   |-- /NotFound
-|   |-- /PaymentPopup
-|   |-- /PrimeDealsSection
-|   |-- /ProductCard
-|   |-- /ProductItemDetails
-|   |-- /Products
-|   |-- /ProductsHeader
+|   |-- /AlternateView
+|   |-- /AltVideoItem
+|   |-- /GameItem
+|   |-- /GamingPage
+|   |-- /HomePage
+|   |-- /HomePageBanner
+|   |-- /LoginPage
+|   |-- /LogoutPopup
+|   |-- /MainLayout
+|   |-- /MenuPopup
+|   |-- /Navbar
+|   |-- /NotFoundPage
+|   |-- /PageIndicator
 |   |-- /ProtectedRoute
-|   |-- /SimilarProductItem
+|   |-- /SavedVideosPage
+|   |-- /Sidebar
+|   |-- /SimilarVideoItem
+|   |-- /SimilarVideos
+|   |-- /TrendingPage
+|   |-- /VideoItem
+|   |-- /VideoItemDetailsPage
+|   |-- /ViewCredentials
 |
 |-- /context
-|   |-- /CartContext
+|   |-- /AppContext
+|   |-- /resources
 |
 |-- App.js
 |-- App.css
 |-- index.js
+|-- GlobalStyle.js
+|-- styledComponents.js
 
 
 </details>
